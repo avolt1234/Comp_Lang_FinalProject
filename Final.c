@@ -13,16 +13,16 @@ struct node *rear = NULL;
 void display();
 //Holding until proven concept has worked, then implement generics
 void enqueue(int);
-void dequeue(int);
+void dequeue();
+int size();
 
 int main()
 {
-    // Push 10 items onto the queue
-    for (size_t i = 0; i < 10; i++)
-    {
-        enqueue(i)
-    }
-
+printf("Help Me");
+    enqueue(1);
+    enqueue(2);
+    enqueue(3);
+    printf("%d\n", size());
     
     
     /*
@@ -110,3 +110,4 @@ void dequeue()
         free(temp);
     }
 }
+
